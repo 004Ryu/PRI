@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+    p.title{
+        text-indent: 4%;
+        position: fixed;
+        color: lightgray;
+        font-size: 90px;
+        margin-left: 0%;
+        margin-top: 0px;
+        border-radius: 10px;
+        background-image: linear-gradient(to left,white,lightgray,darkgray,gray,rgb(100,100,100),black);
+        width: 98.9%;
+    }
+    p.center{
+        font-size: 130%;
+        font-family: 'Courier New', Courier, monospace;
+        text-indent: 2%;
+        text-align: center;
+        margin-right: 2%;
+    }
+    img.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 600px;
+    }
+    img.logo{
+        position: fixed;
+        margin-left: 83.3%;
+        margin-top: 0.05%;
+        height: 101px;
+    }
+    ul {
+        position: fixed;
+        margin-right:83.6%;
+        margin-top: 8%;
+        list-style-type: none;
+        text-align: center;
+    }
+    li{
+        padding: 4px;
+    }
+    a.item{
+        background-color: rgb(80,80,80);
+        border: none;
+        color: lightgray;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    td.padded{
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 100px;
+    }
+    div{
+        background-image: radial-gradient(white,lightgray,darkgray,gray,rgb(100,100,100),black);
+        border-radius: 10px;
+    }
+    div.caracteristicas{
+        margin-bottom: 22.8%;
+    }
+    div.habitat{
+        margin-bottom: 24.2%;
+    }
+    div.distribuicao{
+        margin-bottom: 27.4%;
+    }
+    div.alimentacao{
+        margin-bottom: 14.4%;
+    }
+    </style>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Guaxinim</title>
+    </head>
+
+    <body background="147137.jpg">
+        <audio loop autoplay>
+            <source src="looperman-l-2669240-0183354-lofi-piano-for-sampling.wav">
+        </audio>
+        <ul>
+            <li><a href="#i1" class="item">Caracteristicas</a></li>
+            <li><a href="#i2" class="item">Habitat</a></li>
+            <li><a href="#i3" class="item">Localização</a></li>
+            <li><a href="#i4" class="item">Alimentação</a></li>
+            <li><a href="#i5" class="item">Estilo de Vida</a></li>
+        </ul>
+        <p class="title">Guaxinim</p>
+        <img src="índice.jpg" alt="Escola de Engenharia" class="logo"/>
+        <table>
+                <tr>
+                    <td width="38%"></td>
+                    <td class="padded">
+                        <div class="caracteristicas">
+                            <h1 id="i1" align="center">Caracteristicas</h1>
+                            <p class="center">
+                                    O Guaxinim, por vezes chamado rato-lavadeiro (Procyon lotor) é um mamífero da família dos procionídeos, sendo o de maior porte da mesma.
+                                    Mede entra 40 a 70 cm de comprimento, com um peso entre os 5 e os 26Kg. O seu "casaco" cinzento serve como uma excelente proteção contra o frio.
+                                    Eles possuem patas extremamente ágeis, assim com uma coloração facial idêntica a uma máscara e uma cauda às riscas pretas/cinzentas.
+                            </p>
+                            <img src="guaxinim.jpg" alt="Guaxinim" class="center"/>
+                        </div>
+                        
+                        <div class="habitat">
+                            <h1 id="i2" align="center">Habitat</h1>
+                            <p class="center">
+                                    O habitat preferido do guaxinim são florestas próximas à água e pântanos. 
+                                    Durante o dia, ele dorme em árvores ocas, buracos em pedras ou no chão.
+                                    É muito adaptável e, hoje, é encontrado também em áreas urbanas,
+                                    sendo também encontrado como espécie invasora na Alemanha, áreas da antiga URSS e Japão.
+                            </p>
+                            <img src="147137.jpg" alt="Floresta" class="center"/>
+                        </div>
+    
+                        <div class="distribuicao">
+                            <h1 id="i3" align="center">Distribuição Geográfica</h1>
+                            <img src="Raccoon-range.png" alt="Distribuição" class="center"/>
+                            <p class="center">Nativo das áreas a vermelho | Introduzido nas áreas a azul</p>
+                        </div>
+    
+                        <div class="alimentacao">
+                            <h1 id="i4" align="center">Alimentação</h1>
+                            <p class="center">
+                                    Estes animais noturnos caçam pássaros, ratos, insetos, peixes pequenos, lesmas, cobras, camarões de água doce e rãs.
+                                    Sua dieta também inclui ovos, nozes, cereais e frutas, sendo assim omnívoros. 
+                                    Guaxinins são criaturas muito adaptáveis mas possuem inimigos,Raposa-vermelha (Vulpes vulpes) são uma concorrência com a qual os guaxinins tendem a se preocupar,
+                                    mas ambas as espécies não se encontram com grande frequência mas normalmente a raposa tende a dominar o guaxinim agora já no caso de predadores temos um exemplo : 
+                                    Lobo-vermelho (Canis rufus) um grande predador do guaxinim, o lobo-vermelho anda quase sempre em bandos e costumam ser o predador principal da espécie, Coiote ( Canis latrans)
+                                    é um grande predador do guaxinim mas costuma ser apenas um concorrente,o coiote não ataca guaxinins em duplas mas ataca quando se depara com um exemplar jovem ou ferido. 
+                            </p>
+                            <img src="superstock_1283r-294-medium.jpg" alt="Comida" class="center"/>
+                        </div>
+                        
+                        <div>
+                            <h1 id="i5" align="center">Estilo de Vida</h1>
+                            <p class="center">
+                                    O guaxinim dorme o dia todo e sai à noite para procurar comida.
+                                    Ele persegue as presa em águas rasas ou no chão, arranhando, virando e examinando se a vítima é capturada.
+                                    No entanto, ele só a consome se o cheiro for aprovado pelo seu apurado faro.
+                                    Em áreas frias, os guaxinins passam o inverno em tocas e buracos nas árvores.
+                                    Apesar de dormirem profundamente, eles não hibernam, saindo do seu esconderijo assim que o tempo aqueçe um pouco.
+                                    Os machos acasalam com muitas fêmeas, enquanto as fêmeas aceitam apenas um pretendente. Os machos, que, quase sempre,
+                                    são pacíficos, costumam brigar entre si com muita ferocidade durante a época de acasalamento.
+                                    Na primavera, a fêmea normalmente tem de três a cinco filhotes, após nove semanas de gestação, e cuida sozinha da ninhada.
+                                    A família continua unida por um ano aproximadamente, altura esta em que os jovens guaxinins deixam a companhia da mãe.
+                                    Após a sua Introdução a áreas urbanas o guaxinim ganhou a alcunha de "thrash-panda" devido ao seu hábito de recolher comida
+                                    de contentores do lixe, chegando mesmo a roubar comida ainda dentro de residências.
+                            </p>
+                            <img src="How-to-keep-raccoons-out-of-trash-cans-538x269.jpg" alt="Estilo de Vida" class="center"/>
+                        </div>    
+                    </td>
+                </tr>
+            </table>
+        </table>
+    </body>
