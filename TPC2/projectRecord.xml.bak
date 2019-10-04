@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project SYSTEM "file:/C:/Users/4semanas/Desktop/Trabalho/Processamento%20e%20Representa%C3%A7%C3%A3o%20de%20Informa%C3%A7%C3%A3o/PRI/TPC2/projectRecord.dtd">
+<project>
+    <keyName>ped_tpc2</keyName>
+    <title>TPC2</title>
+    <subTittle>Especificação de DTDs</subTittle>
+    <beginDate>30/09/2019</beginDate>
+    <endDate>02/10/2019</endDate>
+    <supervisor xmlns:xlink="www.di.uminho.pt/~jcr"/>
+    <grupo>
+        <membro id="m1">
+            <nome>Eduardo Semanas</nome>
+            <email>a75536@alunos.uminho.pt</email>
+        </membro>
+    </grupo>
+    <abstract>Para este trabalho de casa foi-nos pedido que realizassemos uma série de exercicios
+        relativos à especificação de DTD (document type definition), incluindo o DTD responsável
+        pela criação deste "project record". Penso ter adquirido correctamente o conhecimento
+        pretendido para este projeto, sentindo-me agora mais confortável com os conceitos de DTD,
+        XML e XPATH.</abstract>
+    <deliverables/>
+</project>

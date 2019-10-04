@@ -1,0 +1,5 @@
+//entrada[starts-with(telefone,'253')]
+//entrada[not(starts-with(telefone,'253'))]
+//entrada[contains(nome,'José')]|//entrada[contains(nome,'Maria')]
+//grupo//entrada/@id
+//entrada[not(@tipo='pessoa')]/@id

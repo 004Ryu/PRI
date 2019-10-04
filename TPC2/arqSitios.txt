@@ -1,0 +1,5 @@
+//ARQELEM[contains(CONCEL,'Amares')]/IDENTI
+//CONCEL
+//ARQELEM[contains(CONCEL,'Montalegre')]/DESCRI
+count(//ARQELEM[contains(CONCEL,'Amares')])
+//ARQELEM[contains(IDENTI,'Castro')]/IDENTI

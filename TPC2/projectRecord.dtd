@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT project (keyName,title,subTittle,beginDate,endDate,supervisor,grupo,abstract,deliverables) >
+<!ELEMENT keyName (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subTittle (#PCDATA) >
+<!ELEMENT beginDate (#PCDATA) >
+<!ELEMENT endDate (#PCDATA) >
+<!ELEMENT supervisor EMPTY >
+
+<!ELEMENT grupo (membro)+ >
+<!ELEMENT membro (nome, email) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+
+<!ELEMENT abstract (#PCDATA) >
+
+<!ELEMENT deliverables (file)+ >
+<!ELEMENT file EMPTY >
+
+<!ATTLIST membro
+                id ID #REQUIRED>
+
+<!ATTLIST supervisor
+                path CDATA #REQUIRED>
+
+<!ATTLIST file
+                path CDATA #REQUIRED>
