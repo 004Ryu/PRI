@@ -13,11 +13,16 @@
             <email>a75536@alunos.uminho.pt</email>
         </membro>
     </grupo>
-    <abstract>Para este trabalho de casa foi-nos pedido que realizassemos uma série de exercicios
-        relativos à especificação de DTD (document type definition), incluindo o DTD responsável
-        pela criação deste "project record". Penso ter adquirido correctamente o conhecimento
-        pretendido para este projeto, sentindo-me agora mais confortável com os conceitos de DTD,
-        XML e XPATH.</abstract>
+    <abstract>
+        <paragraf>Para este trabalho de casa foi-nos pedido que realizassemos uma série de exercicios
+            relativos à especificação de <b>DTD</b>s (document type definition), incluindo o <b>DTD</b> responsável
+            pela criação deste "<it>project record</it>", assim como ao uso de <it>queries</it> de <b>XPATH</b> de
+            forma a processar a informação presente em ficheiros <b>XML</b>.
+        </paragraf>
+        <paragraf> Penso ter adquirido correctamente o conhecimento pretendido para este projeto, 
+            sentindo-me agora mais confortável com os conceitos de DTD, <b>XML</b> e <b>XPATH</b>.
+        </paragraf>
+    </abstract>
     <deliverables>
         <file path="agenda.txt"/>
         <file path="arqSitios.txt"/>

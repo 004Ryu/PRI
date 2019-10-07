@@ -12,7 +12,12 @@
 <!ELEMENT nome (#PCDATA) >
 <!ELEMENT email (#PCDATA) >
 
-<!ELEMENT abstract (#PCDATA) >
+<!ELEMENT abstract (paragraf)+ >
+<!ELEMENT paragraf (#PCDATA|b|it|link)* >
+
+<!ELEMENT b (#PCDATA) >
+<!ELEMENT it (#PCDATA) >
+<!ELEMENT link (#PCDATA) >
 
 <!ELEMENT deliverables (file)+ >
 <!ELEMENT file EMPTY >
