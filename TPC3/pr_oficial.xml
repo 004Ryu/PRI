@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/4semanas/Desktop/Trabalho/Processamento%20e%20Representa%C3%A7%C3%A3o%20de%20Informa%C3%A7%C3%A3o/PRI/TPC3/pr_oficial.dtd">
+<pr>
+    <meta>
+        <keyname>PRI_TPC3</keyname>
+        <title>Geração de ficheiros HTML através de XSL</title>
+        <subtitle>Arqueositios</subtitle>
+        <bdate>10/10/2019</bdate>
+        <edate>14/10/2019</edate>
+        <supervisor>
+            <name>José Carlos Leite Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>1</identifier>
+            <name>Eduardo Semanas de Oliveira Araújo</name>
+            <email>a75536@alunos.uminho.pt</email>
+            <photo path="memberPhotos/perfil"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>nvaowçrnvoçasvsdbpaiwnebpirjbksbmsnb</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="Website/index.html"></deliverable>
+    </deliverables>
+</pr>
