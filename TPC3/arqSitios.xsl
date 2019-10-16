@@ -41,7 +41,7 @@
                     <h1><xsl:value-of select="IDENTI"/></h1>
                     <table>
                         <tr>
-                            <pre><b>Tipo: </b> <xsl:value-of select="DESCRI/LIGA"/></pre>
+                            <xsl:apply-templates select="DESCRI"/>
                         </tr>
                         <tr>
                             <pre><b>Lugar: </b> <xsl:value-of select="LUGAR"/></pre>
@@ -65,15 +65,6 @@
                             <pre><b>Altitude: </b> <xsl:value-of select="ALTITU"/></pre>
                         </tr>
                         <tr>
-                            <pre><b>Acesso: </b> <xsl:value-of select="ACESSO"/></pre>
-                        </tr>
-                        <tr>
-                            <pre><b>Quadro: </b> <xsl:value-of select="QUADRO"/></pre>
-                        </tr>
-                        <tr>
-                            <pre><b>Desarq: </b> <xsl:value-of select="DESARQ"/></pre>
-                        </tr>
-                        <tr>
                             <pre><b>Interp: </b> <xsl:value-of select="INTERP"/></pre>
                         </tr>
                         <tr>
@@ -84,6 +75,15 @@
                         </tr>
                         <tr>
                             <pre><b>Data: </b> <xsl:value-of select="DATA"/></pre>
+                        </tr>
+                        <tr>
+                            <p><b>Acesso: </b> <xsl:value-of select="ACESSO"/></p>
+                        </tr>
+                        <tr>
+                            <p><b>Quadro: </b> <xsl:value-of select="QUADRO"/></p>
+                        </tr>
+                        <tr>
+                            <xsl:apply-templates select="DESARQ"/>
                         </tr>
                     </table>
                     
@@ -99,6 +99,7 @@
                 </body>
             </html>
         </xsl:result-document>
+        
     </xsl:template>
     
     <xsl:template mode="biblio" match="ARQELEM/BIBLIO">
@@ -107,8 +108,17 @@
         </li>
     </xsl:template>
     
+    <xsl:template match="DESCRI">
+        <pre><b>Tipo: </b><xsl:apply-templates/></pre>
+        
+    </xsl:template>
+    
+    <xsl:template match="DESARQ">
+        <p><b>Desarq: </b><xsl:apply-templates/></p>
+    </xsl:template>
+    
     <xsl:template match="LIGA">
-        <it><xsl:value-of select="."/></it>
+        <a href="https://www.google.pt/search?q={.}"><xsl:value-of select="."/></a>
     </xsl:template>
     
 </xsl:stylesheet>

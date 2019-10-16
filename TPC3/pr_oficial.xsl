@@ -8,7 +8,7 @@
         <xsl:result-document href="pr.html">
             <html>
                 <style>
-                    td{
+                    td.main{
                         border: 2px solid black;
                         width: 1500px;
                         height: 200px;
@@ -24,13 +24,13 @@
                     <table>
                         <thead><xsl:value-of select="pr/meta/keyname"/></thead>
                         <tr>                          
-                            <td>
+                            <td class="main">
                                 <h2>Workteam</h2>
-                                <ol>
+                                <l style="list-style-type:none;">
                                     <xsl:apply-templates select="pr/workteam"/>
-                                </ol>
+                                </l>
                             </td>
-                            <td>
+                            <td class="main">
                                 <h2>Supervisor</h2>
                                 <p><b>Name: </b> <xsl:value-of select="pr/meta/supervisor/name"/></p>
                                 <p><b>Email: </b> <xsl:value-of select="pr/meta/supervisor/email"/></p>
@@ -39,13 +39,13 @@
                         </tr>
                         
                         <tr>
-                            <td>
-                                <h1>Deliverables</h1>
-                                <ol>
+                            <td class="main">
+                                <h2>Deliverables</h2>
+                                <ul>
                                     <xsl:apply-templates mode="deliverable" select="pr/deliverables"/>
-                                </ol>
+                                </ul>
                             </td>
-                            <td>
+                            <td class="main">
                                 
                                 <p><b>Begin Date: </b> <xsl:value-of select="pr/meta/bdate"/></p>
                                 <p><b>End Date: </b> <xsl:value-of select="pr/meta/edate"/></p>
@@ -54,7 +54,7 @@
                         </tr>
                     </table>
                     <h1>Abstract</h1>
-                    <pre><xsl:value-of select="pr/abstract"/></pre>
+                    <div><xsl:apply-templates select="pr/abstract"/></div>
                 </body>
             </html>
         </xsl:result-document>
@@ -62,15 +62,43 @@
     
     <xsl:template match="pr/workteam/member">
         <li>
-            <p><b>Name: </b> <xsl:value-of select="name"/></p>
-            <p><b>Email: </b> <xsl:value-of select="email"/></p>
-            <img src="{photo/@path}"/>
+            <table>
+                <tr>
+                    <td>
+                        <p><b>Name: </b> <xsl:value-of select="name"/></p>
+                        <p><b>Email: </b> <xsl:value-of select="email"/></p>
+                    </td>
+                    <td>
+                        <img src="memberPhotos/{photo/@path}" height="140px"/>                        
+                    </td>
+                </tr>
+            </table>
         </li>
     </xsl:template>
     
     <xsl:template match="pr/deliverables/deliverable" mode="deliverable">
         <li>
-            <a href="{@path}"><xsl:value-of select="@path"/></a>
+            <a href="{@path}"><xsl:value-of select="."/></a>
         </li>
+    </xsl:template>
+    
+    <xsl:template match="abstract">
+        <xsl:apply-templates/>
+    </xsl:template>
+    
+    <xsl:template match="p">
+        <p><xsl:apply-templates/></p>                
+    </xsl:template>
+    
+    <xsl:template match="b">
+        <b><xsl:apply-templates/></b>
+    </xsl:template>
+    
+    <xsl:template match="i">
+        <i><xsl:apply-templates/></i>
+    </xsl:template>
+    
+    <xsl:template match="u">
+        <u><xsl:apply-templates/></u>
     </xsl:template>
 </xsl:stylesheet>
