@@ -23,7 +23,7 @@
     </workteam>
     <abstract>
         <p>Nesta entrega foi-nos proposto que realizassemos duas tarefas:</p>
-        <p>A primeira sendo a criação deste Project Record em formato HTML aplicando uma <i>Style Sheet</i> a um ficheiro <b>XML</b> criado por mim, ficheiro este que segue o ficheiro <b>DTD</b> oficial.</p>
+        <p>A primeira sendo a criação deste Project Record em formato <b>HTML</b> aplicando uma <i>Style Sheet</i> a um ficheiro <b>XML</b> criado por mim, ficheiro este que segue o ficheiro <b>DTD</b> oficial.</p>
         <p>Após a realização da tarefa anterior passei então à segunda tarefa, a criação de uma página <b>HTML</b> através da aplicação, novamente, de uma <i>Style Sheet</i> ao ficheiro <b>XML</b> correspondente
             à <u><i>Dataset</i></u> (que por sua vez corresponde à informação sobre os <b><u>Arqueossítios do Nordeste de Portugal</u></b>).</p>
         <p>Penso ter conseguido atingir o objtevio final para este projeto, aprofundando assim o meu conhecimento relativo ao conceito de <b>XSL</b> e mesmo aos conceitos de <b>XML</b> e <b>HTML</b>.</p>
