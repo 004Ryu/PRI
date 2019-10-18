@@ -60,11 +60,12 @@
         </xsl:result-document>
     </xsl:template> 
     
-    <xsl:template match="pr/workteam/member">
+    <xsl:template match="member">
         <li>
             <table>
                 <tr>
                     <td>
+                        <h3><xsl:value-of select="identifier"/></h3>
                         <p><b>Name: </b> <xsl:value-of select="name"/></p>
                         <p><b>Email: </b> <xsl:value-of select="email"/></p>
                     </td>
@@ -76,7 +77,7 @@
         </li>
     </xsl:template>
     
-    <xsl:template match="pr/deliverables/deliverable" mode="deliverable">
+    <xsl:template match="deliverable" mode="deliverable">
         <li>
             <a href="{@path}"><xsl:value-of select="."/></a>
         </li>
