@@ -1,0 +1,12 @@
+{
+  "name": "tpc4",
+  "version": "1.0.0",
+  "description": "ArqSonEVO",
+  "main": "arqSon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node arqSon.js"
+  },
+  "author": "Eduardo Semanas",
+  "license": "ISC"
+}
