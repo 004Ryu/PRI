@@ -27,8 +27,9 @@
         através do <b>NODE JS</b> (utilizando a linguagem de <i>JavaScipt</i>)</p>
         <p>Penso ter sido um projeto optimo para por em prática as diversas noções que nos foram
         ensinadas na última aula, mesmo apesar da sua simplicidade.</p>
-        <p>Lamento apenas não ter tido disponibilidade para explorar ainda mais as possibilidades
-        deste TPC em especifico.</p>
+        <p>Lamento não ter tido disponibilidade para explorar ainda mais as possibilidades
+        deste TPC em especifico, falta de disponibilidade esta que tambem gerou alguns problemas
+        como a falta da geração do ficheiro <b>HTML</b> correspondente a este <i>project record</i>.</p>
     </abstract>
     <deliverables>
         <deliverable path="localhost:4444/musica/1">Exemplo 1</deliverable>
