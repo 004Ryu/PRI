@@ -1,0 +1,30 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal
+                h3 Pauta
+            .w3-container
+
+            ul.w3-ul
+                li 
+                    form.w3-container(action='/alunos' method='POST')
+                        label
+                            b Aluno
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='aluno')
+                        label
+                            b Curso
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='curso')
+                        input.w3-btn.w3-blue-grey(type='submit' value='Adicionar')
+                li
+                    table.w3-table-all
+                        tr
+                            th Aluno
+                            
+                        each al in pauta
+                            tr
+                                td.button.w3-button(onclick="notasAluno('" + al.id + "')") #{al.aluno}
+                                td.button.w3-button.w3-blue-grey(onclick="apagaAluno('" + al.id + "')") Apagar
+                                                
+            footer.w3-container.w3-teal 
+                address Pauta App: Eduardo Semanas
