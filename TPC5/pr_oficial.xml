@@ -29,6 +29,6 @@
            em <i>express</i>.</p>
     </abstract>
     <deliverables>
-        <deliverable path="localhost:4444/alunos">Página inicial</deliverable>
+        <deliverable path="https://localhost:4444/alunos">Página inicial</deliverable>
     </deliverables>
 </pr>
