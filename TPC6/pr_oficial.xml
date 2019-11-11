@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/Eduar/Desktop/Trabalho/Processamento%20e%20Representa%C3%A7%C3%A3o%20de%20Informa%C3%A7%C3%A3o/PRI/TPC5/pr_oficial.dtd">
+<pr>
+    <meta>
+        <keyname>PRI_TPC6</keyname>
+        <title>Introdução ao Express</title>
+        <subtitle>Pauta</subtitle>
+        <bdate>09/11/2019</bdate>
+        <edate>11/11/2019</edate>
+        <supervisor>
+            <name>José Carlos Leite Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>1</identifier>
+            <name>Eduardo Semanas de Oliveira Araújo</name>
+            <email>a75536@alunos.uminho.pt</email>
+            <photo path="semanas.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>Para este TPC foi-nos proposta a criação de uma <i>aplicação web</i> relativa à gestão de uma lista
+           de filmes pertencentes a um <i>Base de Dados</i> em <b>MongoDB</b>, na qual deveria ser possível introduzir e remover filmes, assim como visualizar a informação
+           de um dado filme.</p>
+        <p>Foi, sem dúvida, um projeto eficiente relativamente ao aprofundar do entendimento do conceito de <i>paths</i>
+           em <i>express</i>, agora com o acréscimo das funcionalidades relativas à  utilização uma <i>Base de Dados</i> 
+           em <b>MongoDB</b>.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://localhost:4444/">Página inicial</deliverable>
+    </deliverables>
+</pr>

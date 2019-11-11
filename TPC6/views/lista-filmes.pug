@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+        ul.w3-ul
+            li
+                header.w3-container.w3-teal
+                    h1 Adicionar Filme
+                form.w3-container(action='/filmes' method='POST')
+                    label
+                        b Titulo: 
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='title')
+                    label
+                        b Ano de lançamento: 
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='year')
+                    label
+                        b Elenco: 
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='cast')
+                    label
+                        b Generos: 
+                    input.w3-input.w3-border.w3-light-grey(type='text' name='genres')
+                    input.w3-btn.w3-blue-grey(type='submit' value='Adicionar')
+            li
+                header.w3-container.w3-teal
+                    h1 Lista de Filmes
+                .w3-container
+                    table.w3-table-all
+                        each filme in lista
+                            tr
+                                td.button.w3-button(onclick="metaFilme('" + filme._id + "')") #{filme.title}
+                                td.button.w3-button.w3-blue-grey(onclick="apagaFilme('" + filme._id + "')") Apagar
+                                
