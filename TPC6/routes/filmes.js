@@ -12,10 +12,6 @@ router.get('/', function(req, res, next) {
       })
 })
 
-router.get('/inserir', function(req, res) {
-  res.render('form-filme')
-})
-
 router.get('/:idFilme', function(req, res) {
   axios.get('http://localhost:4444/api/filmes/' + req.params.idFilme)
       .then(dados => {
