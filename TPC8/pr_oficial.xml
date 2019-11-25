@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/Eduar/Desktop/Trabalho/Processamento%20e%20Representa%C3%A7%C3%A3o%20de%20Informa%C3%A7%C3%A3o/PRI/TPC8/pr_oficial.dtd">
+<pr>
+    <meta>
+        <keyname>PRI_TPC7</keyname>
+        <title>API Obras</title>
+        <subtitle>Pauta</subtitle>
+        <bdate>12/11/2019</bdate>
+        <edate>12/11/2019</edate>
+        <supervisor>
+            <name>José Carlos Leite Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>1</identifier>
+            <name>Eduardo Semanas de Oliveira Araújo</name>
+            <email>a75536@alunos.uminho.pt</email>
+            <photo path="semanas.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>Para este TPC foi-nos proposta a criação de uma aplicação web capaz de representar ficheiros. De forma a realizar esta tarefa
+        senti a necessidade de aprofundar mais a minha compreensão da linguagem <i>JQuery</i> de forma a representar o conteudo dos ficheiros
+        em questão em formato de um <i>modal</i>.</p>
+        <p>Penso que o objetivo tenha sido comprido, apesar de ter encontrado uma dificuldade, a qual não estava de todo à espera, ao tentar
+        adicionar um botão de "Apagar Ficheiro" que acabou por não ficar funcional infelizmente.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="/pr.html">Link do PR</deliverable>
+    </deliverables>
+</pr>
