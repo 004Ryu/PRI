@@ -1,0 +1,71 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-brown
+                h3 #{tipologia.designacao}
+            .w3-container
+                .w3-container
+                    header.w3-container.w3-teal
+                        h3.w3-center Informação Base
+                    table.w3-table-all
+                        tr
+                            th Estado
+                            td.w3-center= tipologia.estado
+                        tr
+                            th Sigla
+                            td.w3-center= tipologia.sigla
+                
+                .w3-container
+                    header.w3-container.w3-teal
+                        h3.w3-center Lista de Entidades que compõe a Tipologia
+                    table.w3-table-all
+                        tr
+                            th.w3-center.w3-large Sigla
+                            th.w3-center.w3-large Designação
+                            th.w3-center.w3-large Internacional
+
+                        each entidade in elementos
+                            tr
+                                td.w3-center.button.w3-button(onclick="metaEntidade('" + entidade.id + "')") #{entidade.sigla}
+                                td.w3-center= entidade.designacao
+                                if entidade.internacional
+                                    td.w3-center= entidade.internacional
+                                else
+                                    td.w3-center Não
+
+                .w3-container
+                    header.w3-container.w3-teal
+                        h3.w3-center Processos de que a tipologia é dona
+                    table.w3-table-all
+                        tr
+                            th.w3-center.w3-large Codigo
+                            th.w3-center.w3-large Titulo
+                            th.w3-center.w3-large ID
+
+                        each entidade in dona
+                            tr
+                                td.w3-center= entidade.codigo
+                                td.w3-center= entidade.titulo
+                                td.w3-center= entidade.id
+
+                .w3-container
+                    header.w3-container.w3-teal
+                        h3.w3-center Processos nos quais a Tipologia participa
+                    table.w3-table-all
+                        tr
+                            th.w3-center.w3-large Codigo
+                            th.w3-center.w3-large Titulo
+                            th.w3-center.w3-large Tipo de participacao
+                            th.w3-center.w3-large ID
+
+                        each entidade in participa
+                            tr
+                                td.w3-center= entidade.codigo
+                                td.w3-center= entidade.titulo
+                                td.w3-center= entidade.tipoPar
+                                td.w3-center= entidade.id                 
+                                                
+            footer.w3-container.w3-brown 
+                address TestePRI2019/20 App: Eduardo Semanas A75536 
+                    a(href='/') Voltar à pagina principal

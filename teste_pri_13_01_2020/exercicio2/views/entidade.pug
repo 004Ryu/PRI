@@ -1,0 +1,22 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-brown
+                h3 #{entidade.designacao}
+            .w3-container
+
+            table.w3-table-all
+                tr
+                    th Estado
+                    td.w3-center= entidade.estado
+                tr
+                    th SIOE
+                    td.w3-center= entidade.sioe
+                tr
+                    th Sigla
+                    td.w3-center= entidade.sigla   
+                                                
+            footer.w3-container.w3-brown 
+                address TestePRI2019/20 App: Eduardo Semanas A75536 
+                    a(href='/') Voltar à pagina principal
